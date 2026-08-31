@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "farm": {
+      ".read": true,
+      ".write": true,
+      "history": {
+        // The app queries history with orderByChild('ts'). Without this index
+        // Firebase still answers, but downloads every sample and sorts on the
+        // client — which gets slow fast.
+        ".indexOn": ["ts"]
+      }
+    }
+  }
+}

@@ -25,7 +25,9 @@ android {
         applicationId = "com.smartfarm.smart_farm"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        // tflite_flutter requires API 26+ for the native TensorFlow Lite
+        // delegate; the Flutter default is lower.
+        minSdk = maxOf(26, flutter.minSdkVersion)
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName

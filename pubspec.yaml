@@ -14,6 +14,14 @@ dependencies:
   firebase_core: ^3.9.0
   firebase_database: ^11.2.0
   provider: ^6.1.2
+  http: ^1.6.0
+  fl_chart: ^1.2.0
+  geolocator: ^14.0.3
+  image_picker: ^1.2.3
+  tflite_flutter: ^0.12.1
+  image: ^4.9.1
+  shared_preferences: ^2.5.5
+  intl: ^0.20.3
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +30,21 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    # Drop a TensorFlow Lite classifier here as plant_disease.tflite, with its
+    # class names in labels.txt. See assets/models/README.md.
+    - assets/models/
+    # Optional crop photography, named by crop id (maize.jpg, tomato.jpg, ...).
+    # CropImage falls back to a painted illustration for any id with no file,
+    # so the directory may stay empty. See assets/crops/README.md.
+    - assets/crops/
+
+  fonts:
+    # Bundled, not fetched. `google_fonts` downloads at first paint, and this
+    # app has to render a moisture reading in a field with no signal. One
+    # variable file (weight axis 200-800) covers every weight the app uses;
+    # styles select an instance via FontVariation in `Tokens.textTheme`.
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans.ttf

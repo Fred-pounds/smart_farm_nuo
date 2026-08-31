@@ -1,4 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Weather forecast and irrigation advice are localised to the farm. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Leaf photos for on-device disease detection. -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- The app works without a camera; location is likewise optional. -->
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
     <application
         android:label="smart_farm"
         android:name="${applicationName}"

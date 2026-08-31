@@ -23,36 +23,42 @@ class DefaultFirebaseOptions {
   }
 
   // ── Android ────────────────────────────────────────────────────────────────
-  // Find these in your google-services.json file
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR_ANDROID_API_KEY',
-    appId: 'YOUR_ANDROID_APP_ID',          // e.g. 1:123456789:android:abc123
-    messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    databaseURL: 'YOUR_DATABASE_URL',       // e.g. https://your-project-default-rtdb.firebaseio.com
-    storageBucket: 'YOUR_STORAGE_BUCKET',
+    apiKey: 'AIzaSyDG767h17kUW2aFW3Nk4Wf9oh6C2tZZ-HI',
+    appId: '1:150213806225:android:08692ba652b663b27b1730',
+    messagingSenderId: '150213806225',
+    projectId: 'smart-farm-602a3',
+    databaseURL: 'https://smart-farm-602a3-default-rtdb.firebaseio.com',
+    storageBucket: 'smart-farm-602a3.firebasestorage.app',
   );
 
+  // Find these in your google-services.json file
+
   // ── iOS ────────────────────────────────────────────────────────────────────
-  // Find these in your GoogleService-Info.plist file
+
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'YOUR_IOS_API_KEY',
-    appId: 'YOUR_IOS_APP_ID',              // e.g. 1:123456789:ios:abc123
-    messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    databaseURL: 'YOUR_DATABASE_URL',
-    storageBucket: 'YOUR_STORAGE_BUCKET',
+    apiKey: 'AIzaSyD64bkDVRldNEQ5tQecgahqIXGUi68KdrI',
+    appId: '1:150213806225:ios:c9cc1e5d1a0bc09e7b1730',
+    messagingSenderId: '150213806225',
+    projectId: 'smart-farm-602a3',
+    databaseURL: 'https://smart-farm-602a3-default-rtdb.firebaseio.com',
+    storageBucket: 'smart-farm-602a3.firebasestorage.app',
     iosBundleId: 'com.smartfarm.smartFarm',
   );
 
-  // ── Web (optional) ─────────────────────────────────────────────────────────
+  // Find these in your GoogleService-Info.plist file
+
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'YOUR_WEB_API_KEY',
-    appId: 'YOUR_WEB_APP_ID',
-    messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    databaseURL: 'YOUR_DATABASE_URL',
-    storageBucket: 'YOUR_STORAGE_BUCKET',
-    authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
+    apiKey: 'AIzaSyCCQMwCaCnigZAEiOzlu8HJp8cgsDmxrsY',
+    appId: '1:150213806225:web:0fd8980fe3cb366f7b1730',
+    messagingSenderId: '150213806225',
+    projectId: 'smart-farm-602a3',
+    authDomain: 'smart-farm-602a3.firebaseapp.com',
+    databaseURL: 'https://smart-farm-602a3-default-rtdb.firebaseio.com',
+    storageBucket: 'smart-farm-602a3.firebasestorage.app',
+    measurementId: 'G-FFQPJP10CE',
   );
+
+  // ── Web (optional) ─────────────────────────────────────────────────────────
 }

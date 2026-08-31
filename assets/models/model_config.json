@@ -1,0 +1,4 @@
+{
+  "_comment": "Pixel scaling the model expects. A TFLite file records its input SHAPE and TYPE but not the preprocessing it was trained with, so this cannot be inferred — it must be declared. Getting it wrong does not error; it silently produces confident nonsense. See README.md.",
+  "inputScaling": "raw255"
+}
